@@ -2,11 +2,6 @@ import requests
 import time
 from parsel import Selector
 
-"""
-html = fetch("https://blog.betrybe.com/")
-scrape_next_page_link(html)
-"""
-
 
 # Requisito 1
 def fetch(url):
@@ -41,7 +36,20 @@ def scrape_next_page_link(html_content):
 
 # Requisito 4
 def scrape_noticia(html_content):
-    """Seu código deve vir aqui"""
+    selector = Selector(html_content)
+
+    news = {
+        "url": selector.css("link[rel=canonical]::attr(href)").get(),
+        "title": selector.css(".entry-title::text").get().rstrip(),
+        "timestamp": selector.css("li.meta-date::text").get(),
+        "writer": selector.css(".author > a::text").get(),
+        "comments_count": len(selector.css(".comment-list li").getall()) or 0,
+        "summary": selector.xpath("string(//p)").get().rstrip(),
+        "tags": selector.css(".post-tags a::text").getall(),
+        "category": selector.css(".category-style > span.label::text").get(),
+    }
+
+    return news
 
 
 # Requisito 5
