@@ -26,12 +26,12 @@ def pause():
 def analyzer_menu():
     while True:
         print("Selecione uma das opções a seguir:")
-        print(" 0 - Popular o banco com notícias;")
-        print(" 1 - Buscar notícias por título;")
-        print(" 2 - Buscar notícias por data;")
-        print(" 3 - Buscar notícias por tag;")
-        print(" 4 - Buscar notícias por categoria;")
-        print(" 5 - Listar top 5 notícias;")
+        print(" 0 - Popular o banco com noticias;")
+        print(" 1 - Buscar noticias por titulo;")
+        print(" 2 - Buscar noticias por data;")
+        print(" 3 - Buscar noticias por tag;")
+        print(" 4 - Buscar noticias por categoria;")
+        print(" 5 - Listar top 5 noticias;")
         print(" 6 - Listar top 5 categorias;")
         print(" 7 - Sair.")
 
@@ -39,16 +39,16 @@ def analyzer_menu():
         try:
             match option:
                 case "0":
-                    print("Digite quantas notícias serão buscadas:")
+                    print("Digite quantas noticias serão buscadas:")
                     num_news = int(input())
                     get_tech_news(num_news)
-                    print(f"Banco populado com {num_news} notícias.")
+                    print(f"Banco populado com {num_news} noticias.")
                 case "1":
-                    title = input("Digite o título: ")
+                    title = input("Digite o titulo: ")
                     result = search_by_title(title)
                     print(result)
                 case "2":
-                    date = input("Digite a data no formato aaaa-mm-dd: ")
+                    date = input("Digite a data no formato dd/mm/yyyy: ")
                     result = search_by_date(date)
                     print(result)
                 case "3":
