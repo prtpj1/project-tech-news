@@ -40,14 +40,16 @@ def scrape_noticia(html_content):
     selector = Selector(html_content)
 
     news = {
-        "url": selector.css("link[rel=canonical]::attr(href)").get(),
-        "title": selector.css(".entry-title::text").get().rstrip(),
-        "timestamp": selector.css("li.meta-date::text").get(),
-        "writer": selector.css(".author > a::text").get(),
+        "url": selector.css("link[rel=canonical]::attr(href)").get() or "",
+        "title": (selector.css(".entry-title a::text").get() or "").rstrip(),
+        "timestamp": selector.css("li.meta-date::text").get() or "",
+        "writer": selector.css(".author > a::text").get() or "",
         "comments_count": len(selector.css(".comment-list li").getall()) or 0,
-        "summary": selector.xpath("string(//p)").get().rstrip(),
-        "tags": selector.css(".post-tags a::text").getall(),
-        "category": selector.css(".category-style > span.label::text").get(),
+        "summary": (selector.xpath("string(//p)").get() or "").rstrip(),
+        "tags": selector.css(".post-tags a::text").getall() or [],
+        "category": (
+            selector.css(".category-style > span.label::text").get() or ""
+        ),
     }
 
     return news
