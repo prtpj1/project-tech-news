@@ -94,11 +94,11 @@ Below, the menu options to help english users:
 
 - <strong>If this is your first time running the program</strong>, start by choosing option 0  <em>(zero)</em> to fill the database with news <em><u>(without this, the other options will not work)</u></em>
 - When choosing how many news articles to go into the database, the larger the number, the longer the wait until you can use the other options <em>(the time may vary depending on your computer)</em>.
-- If you are searching for keywords without a positive result, you can directly access the database and check all the news downloaded from the blog. To do this, follow the steps below in the terminal by typing the following commands:
-  1 - `docker ps` ➡️ this will display the containers that are running
-  2 - `docker exec -it <name or id> mongo` ➡️ it must be the container that has the mongo image 
-  3 - `use tech_news` ➡️ this will make mongo use the correct database
-  4 - `db.news.find().pretty()` ➡️ this will display all the news downloaded from the blog
+- If you are searching for keywords without a positive result, you can directly access the database and check all the news downloaded from the blog. To do this, follow the steps below in the terminal by typing the following commands:<br><br>
+  1 - `docker ps` ➡️ this will display the containers that are running<br>
+  2 - `docker exec -it <name or id> mongo` ➡️ it must be the container that has the mongo image <br>
+  3 - `use tech_news` ➡️ this will make mongo use the correct database<br>
+  4 - `db.news.find().pretty()` ➡️ this will display all the news downloaded from the blog<br>
   5 - `exit` ➡️ exit the mongo terminal
 
 ---
@@ -168,11 +168,11 @@ Feedbacks são bem vindos.
 ⚠️<strong>Observações importantes:</strong>⚠️ 
 - <strong>Se for a primeira vez executando o programa</strong>, comece escolhendo a opção 0  <em>(zero)</em> para preencher o banco de dados com as noticias <em><u>(sem isso as outras opções não funcionarão)</u></em>
 - Ao escolher quantas noticias irão para o banco de dados, quanto maior o número, maior será o tempo de espera até você poder usar as outras opções <em>(o tempo pode variar de acordo com o seu computador)</em>.
-- Se estiver buscando por palavras sem um resultado positivo, você pode acessar diretamente o banco de dados e verificar todas as noticias baixadas do blog. Para isto, dentro do terminal, siga o passo a passo digitando os comandos abaixo:
-  1 - `docker ps` ➡️ vai exibir os containers que estão rodando
-  2 - `docker exec -it <nome ou id> mongo` ➡️ tem que ser o container que tem a imagem do mongo 
-  3 - `use tech_news` ➡️ isso fará o mongo usar o banco de dados correto
-  4 - `db.news.find().pretty()` ➡️ exibirá todas as noticias baixadas do blog
+- Se estiver buscando por palavras sem um resultado positivo, você pode acessar diretamente o banco de dados e verificar todas as noticias baixadas do blog. Para isto, dentro do terminal, siga o passo a passo digitando os comandos abaixo:<br><br>
+  1 - `docker ps` ➡️ vai exibir os containers que estão rodando<br>
+  2 - `docker exec -it <nome ou id> mongo` ➡️ tem que ser o container que tem a imagem do mongo <br>
+  3 - `use tech_news` ➡️ isso fará o mongo usar o banco de dados correto<br>
+  4 - `db.news.find().pretty()` ➡️ exibirá todas as noticias baixadas do blog<br>
   5 - `exit` ➡️ sair do terminal do mongo
 
 ---
