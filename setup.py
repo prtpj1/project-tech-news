@@ -14,7 +14,7 @@ setup(
     entry_points={
         "console_scripts": [
             "tech-news-collector=tech_news.menu:collector_menu",
-            "tech-news-analyzer=tech_news.menu:analyzer_menu",
+            "start-analyzer=tech_news.menu:analyzer_menu",
         ],
     },
 )
