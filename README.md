@@ -8,7 +8,7 @@
 <a href="#in-this-project-i-learned-and-put-into-practice">Learning</a> •
 <a href="#according-to-the-project-requirements-designated-by-trybe-i-learned-how-to">Requirements</a> •
 <a href="#stacks">Stacks</a> •
-<a href="#how-to-run-the-application">How to run the application</a>
+<a href="#whale-how-to-run-the-application">How to run the application</a>
 </p>
 
 ---
@@ -17,7 +17,7 @@
 <a href="#nesse-projeto-aprendi-e-coloquei-em-prática">Aprendizado</a> •
 <a href="#de-acordo-com-os-requisitos-do-projeto-designados-pela-trybe-aprendi-como">Requisitos</a> •
 <a href="#tecnologias-utilizadas">Tecnologias Utilizadas</a> •
-<a href="#como-rodar-a-aplicação">Rodar a Aplicação</a>
+<a href="#whale-como-rodar-a-aplicação">Rodar a Aplicação</a>
 </p>
 
 ---
@@ -149,7 +149,7 @@ Feedbacks são bem vindos.
 <a href="https://www.docker.com/" target="_blank" rel="noreferrer"><img src="https://github.com/prtpj1/prtpj1/blob/main/Github%20Imgs/Docker2.png?raw=true" width="50" height="50" alt="Docker Icon" /></a><a href="https://www.python.org/" target="_blank" rel="noreferrer"><img src="https://github.com/prtpj1/prtpj1/blob/main/Github%20Imgs/Python2.png?raw=true" width="50" height="50" alt="Python Icon" /></a>
 
 ---
-## :whale: Como rodar a aplicação?
+## :whale: Como rodar a aplicação
 - Confirme que o 🐋<strong>Docker</strong>🐋está rodando no seu computador
 `systemctl status docker` <em><u>(se sim, você verá a palavra "active" na cor verde)</u></em>
 - Clone o repositório: <br>
